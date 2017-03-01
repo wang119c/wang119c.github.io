@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wang119c.github.io/"/>
-  <updated>2017-03-01T02:27:39.235Z</updated>
+  <updated>2017-03-01T02:29:32.522Z</updated>
   <id>https://wang119c.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>这是第一篇文章</title>
+    <title>hexo+github搭建个人博客</title>
     <link href="https://wang119c.github.io/2017/03/01/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://wang119c.github.io/2017/03/01/hexo+github搭建个人博客/</id>
     <published>2017-03-01T02:26:42.718Z</published>
-    <updated>2017-03-01T02:27:39.235Z</updated>
+    <updated>2017-03-01T02:29:32.522Z</updated>
     
     <content type="html"><![CDATA[<p>废话不多说，开始进入正题</p>
 <p>hexo官网:<a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
