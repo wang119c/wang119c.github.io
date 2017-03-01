@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wang119c.github.io/"/>
-  <updated>2017-02-28T06:14:04.400Z</updated>
+  <updated>2017-03-01T02:27:39.235Z</updated>
   <id>https://wang119c.github.io/</id>
   
   <author>
@@ -14,6 +14,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>这是第一篇文章</title>
+    <link href="https://wang119c.github.io/2017/03/01/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://wang119c.github.io/2017/03/01/hexo+github搭建个人博客/</id>
+    <published>2017-03-01T02:26:42.718Z</published>
+    <updated>2017-03-01T02:27:39.235Z</updated>
+    
+    <content type="html"><![CDATA[<p>废话不多说，开始进入正题</p>
+<p>hexo官网:<a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a></p>
+<p>第一步   安装必须要的工具 （必须安装 node/git）<br><a href="http://nodejs.cn/download/" target="_blank" rel="external">http://nodejs.cn/download/</a>  nodejs 下载地址</p>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a>  git 下载地址 </p>
+<p><a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>    申请GitHub<br>由于我的工具早就配置好了，就没有按照官网上的去下载</p>
+<p>正式安装hexo<br>npm install hexo-cli -g   或者也可以用淘宝镜像cnpm </p>
+<p>在任意一个地方建立项目文件夹,我的是z-nl,进入，执行init命令初始化hexo,命令：</p>
+<p>hexo init</p>
+<p>npm install</p>
+<p>hexo generate</p>
+<p>hexo server<br>这样就可以开启本地blog  ，自动生成的地址是<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>  </p>
+<p>上传到github<br>首先上github 设置自己的域名，</p>
+<p>建一个仓库，设置为wang119c.github.io 【这里的wang119c 是我的用户名】</p>
+<p>设置本地_config.yml  配置</p>
+<h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></h2><p>deploy:</p>
+<p>type: git</p>
+<p>repo: <a href="https://github.com/wang119c/wang119c.github.io" target="_blank" rel="external">https://github.com/wang119c/wang119c.github.io</a><br>执行命令</p>
+<p>npm install hexo-deployer-git –save</p>
+<p>hexo deploy<br>搭建完毕 访问你的域名就可以了！</p>
+<p>当然你要用自己的域名  上dns 解析下  OK了</p>
+<p>每次部署的步骤，可按以下三步来进行:</p>
+<p>hexo clean</p>
+<p>hexo generate</p>
+<p>hexo deploy<br>几个常用的命令:</p>
+<p>hexo new  “postName”  #新建文章</p>
+<p>hexo new page “pageName” #新建页面</p>
+<p>hexo generate #生成静态页面至public目录</p>
+<p>hexo server #开启预览访问端口</p>
+<p>hexo deploy #将.deploy目录部署到<br>下面是关于主题的安装</p>
+<p>从官网下载到本地，是一个主题包</p>
+<p>把主题包放入</p>
+<p>themes 这个包 内 ，然后 在_config.yml 里面配置 主题有theme 这个配置项。当然主题包里面也有个_config.yml 也是需要配置的，</p>
+<p>menu:  #导航栏  </p>
+<p>主页: / </p>
+<p>归档: /archives  </p>
+<p>关于: /about  #介绍一下你自己  </p>
+<p>网络工具: /tools  #自己添加  </p>
+<p>资源共享: /share  #自己添加</p>
+<p>widgets:  ## 右边的零部件，</p>
+<p>jacman主题提供了7个：</p>
+<p>tagcloud#标签云</p>
+<p>-links#友情链接</p>
+<p>以Jekyll主题为例</p>
+<p>hexo提供的更多主题提供了丰富的主题可以选择，安装方法大同小异，其中包括一款黑色背景的，好了，就它了。</p>
+<p>安装插件</p>
+<p>npminstall–save hexo-renderer-jade hexo-generator-feed<br>clone该主题到/themes/jekyll文件夹</p>
+<p>修改/_config.yml的theme值</p>
+<p>添加feed属性</p>
+<p>复制Demo.md到source/_post文件夹</p>
+<p>本地运行预览</p>
+<p>hexo clean</p>
+<p>hexo generate</p>
+<p>hexo deploy<br>上面 介绍了 找到一个漂亮的文章主题，但是还不知道怎么写文章，下面就是要介绍的</p>
+<p>直接在source/_posts/下复制一份 .md文件，可以随意命名，然后里面就可以写文章了，用你自己喜欢的编辑器，比如sublime/editplus…都可以</p>
+<p>想要在文章中插入图片的话，可以按照Markdown语法来插入，格式为<img src="图片地址" alt="图片名称">。</p>
+<p>第一种：图片的存放有两种方式：在本地source目录下新建一个存放图片的文件夹，比如images，然后把想要插入的图片放在里面，插入图片的路径；</p>
+<p>第二种方法:是把图片上传到网络，然后插入图片路径。推荐使用第二种。</p>
+<p>推荐两个比较好用的：</p>
+<p>极简图床；无需注册，方便快捷。</p>
+<p>七牛云存储；需要注册，免费，空间大，速度快。</p>
+<p>基本上完工。最后加上Markdown的用法指南</p>
+<p><a href="https://segmentfault.com/markdown#articleHeader7" target="_blank" rel="external">https://segmentfault.com/markdown#articleHeader7</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;废话不多说，开始进入正题&lt;/p&gt;
+&lt;p&gt;hexo官网:&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;第一步   安装必须要的工具 （必须安装 nod
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>这是第一篇文章</title>
